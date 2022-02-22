@@ -10,7 +10,8 @@ def display_option():
     elif option_chosen == 2:
         display_message = "You have chosen Option 2"
 
-
+    message.configure(text = display_message)
+    
 root = tk.Tk()
 
 option_chosen = tk.IntVar(root) 
