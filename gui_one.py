@@ -1,18 +1,21 @@
 import tkinter as tk      # this is used to create a GUI
 from tkinter import ttk   # this is used to adapt to the OS (Operating System)
 
-def convert_temp():
+
+def convert_temp():       # this is used to convert temperatures from F to C or C to F
+
     # 1. Get temperature from Entry widget
     temperature = int(entry_widget.get())
 
     # 2. Find if user wants F to C or C to F
     if(temp==1):
+        print("F to C")
         result_temp = (temperature - 32) * 5/9
     elif(temp==2):
+        print("C to F")
         result_temp = (temperature * 9/5) + 32
 
     # 3. Calculate results (F to C = (x minus 32) * 5/9)
-    
 
     # 4. Display result
     result_label.configure(text = "Result: {}".format(result_temp))
