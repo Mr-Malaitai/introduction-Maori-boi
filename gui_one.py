@@ -11,14 +11,12 @@ def convert_temp():       # this is used to convert temperatures from F to C or 
     if(temp==1):
         print("F to C")
         result_temp = (temperature - 32) * 5/9
+    # 3. Calculate results (F to C = (x minus 32) * 5/9)    
     elif(temp==2):
         print("C to F")
         result_temp = (temperature * 9/5) + 32
-
-    # 3. Calculate results (F to C = (x minus 32) * 5/9)
-
     # 4. Display result
-    result_label.configure(text = "Result: {}".format(result_temp))
+    result_label.configure(text = "Result: -{}".format(result_temp))
 
 
 root = tk.Tk()            # this creates a window
